@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dom.css">
+    <title>Dom.js</title>
+</head>
+
+<body>
+    <p id="pa"></p>
+
+    <div class="changer">
+        <h1 id="title">Hello World</h1>
+        <button onclick="change()">change</button>
+    </div>
+    <br><br>
+
+    <div class="addition">
+        <input type="number" id="num1" placeholder="enter a number">
+        <input type="number" id="num2" placeholder="enter a number">
+        <br>
+        <button onclick="add()">ADD</button>
+        <p id="result"></p>
+    </div>
+
+    <section class="game">
+        <h1>Guess The Number </h1>
+        <input type="number" id="guess" placeholder="guess" min="1" max="10">
+        <button id="check" onclick="match()">Check</button>
+        <button onClick="window.location.reload();">Refresh</button>
+        <p id="output">Result</p>
+        <p id="score">Aura:10</p>
+    </section>
+
+    <div class="taskOne">
+        <input type="text" id="inputbox">
+        <button onclick="task()">insert</button>
+        <h1 id="point"></h1>
+    </div>
+
+    <div class="container" id="container">
+        <button onclick="words()">ADD F*ck</button>
+    </div>
+
+    <div class="color">
+        <button id="nigga" onclick="color()">Change color</button>
+    </div>
+
+    <!-- <div class="gg">
+        <h1 id="above"></h1>
+        <button id="one" onclick="show(1)" value="ELG">ELG</button>
+        <button id="two" onclick="show(2)" value="Ender-Man">Ender-Man</button>
+        <button id="three" onclick="show(3)" value="VAnaKAm">VAnaKAm</button>
+    </div> -->
+    <div class="GG">
+        <h1 id="above"></h1>
+        <button onclick="show(event)">ELG</button>
+        <button onclick="show(event)">Ender-Man</button>
+        <button onclick="show(event)">VAnaKAm</button>
+    </div>
+
+    <div class="deletion">
+        <h2 onclick="deleting(event)">oops</h2>
+        <h2 onclick="deleting(event)">hell</h2>
+        <h2 onclick="deleting(event)">yeah</h2>
+        <h2 onclick="deleting(event)">!...</h2>
+    </div>
+
+    <div class="todo" id="todoo">
+        <h1>ToDo LiSt</h1>
+        <input type="text" id="todolist">
+        <button id="newtask" onclick="ntask()">ADD</button>
+        <ul id="list-item">
+            <li>ahhhh
+                <button onclick="sala(event)"> delete </button>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="form">
+        <h1>Info</h1>
+
+            <table>
+                <tr>
+                    <td>NAME</td>
+                    <th><input type="text" name="name" id="name"></th>
+                </tr>
+                <tr>
+                    <td>AGE</td>
+                    <th><input type="number" name="age" id="age"></th>
+                </tr>
+                <tr>
+                    <td>COURSE</td>
+                    <th>
+                        <select name="course" id="course">
+                            <option value="web dev">Web Dev</option>
+                            <option value="iot">IOT</option>
+                            <option value="app dev">App Dev</option>
+                            <option value="ethical hacking">Ethical Hacking</option>
+
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <th>
+                        <label for="male"><input type="radio" name="gender" id="gender" value="male">male</label>
+                        <label for="female"><input type="radio" name="gender" id="gender" value="female">female</label>
+                    </th>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <th><input type="email" name="email" id="email"></th>
+                </tr>
+            </table>
+            <button id="save" onclick="handleform()">Enter</button>
+        <br><br>
+
+        <div class="details">
+            <table>
+                <tr id="pp">
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="Dom.js"></script>
+</body>
+
+</html>

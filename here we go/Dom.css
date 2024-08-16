@@ -1,0 +1,17 @@
+
+body {
+    background-color: black;
+    color: bisque;
+    font-family: Arial, sans-serif;
+    /* display: grid;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#title {
+    opacity: 0.8;
+}
+
+table,th,td {
+    border: solid 1px;
+}
