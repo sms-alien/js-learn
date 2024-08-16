@@ -180,7 +180,8 @@ function handleform() {
 var inputname = document.getElementById("name");
 var inputage = document.getElementById("age");
 var inputcourse = document.getElementById("course");
-var inputgender = document.querySelector("#gender");
+var malegender = document.getElementById("male");
+var femalegender = document.getElementById("female");
 var inputemail = document.getElementById("email");
 var inputsave = document.getElementById("save");
 
@@ -196,9 +197,17 @@ function handleform() {
     var namevalue = inputname.value;
     var agevalue = inputage.value;
     var coursevalue = inputcourse.value;
-    var genderValue = inputgender.value;
+    var maleValue = malegender.value;
+    var femaleValue = femalegender.value;
+    var genderValue=null;
     var emailvalue = inputemail.value;
 
+    if (malegender.checked) {
+        genderValue='male'
+    }
+    else{
+        genderValue='female'
+    }
     content.push({
         name: namevalue,
         age: agevalue,
