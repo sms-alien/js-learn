@@ -1,7 +1,49 @@
+* {
+    padding: o;
+    margin: 0;
+}
+
 body {
     height: 100vh;
     background-image: linear-gradient(rgb(165, 166, 252), rgb(2, 2, 87));
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
+
+.navbar {
+    background-color: #3548f8;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fd6569;
+}
+
+.container {
+    padding: 10px;
+}
+
+.rant-container {
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    color: bisque;
+    border-radius: 50px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 {
+    color: #fd6569;
+}
+
+h5 {
+    color: rgb(250, 179, 92);
+}
+
 .overlay {
     background-color: black;
     height: 100%;
@@ -11,27 +53,65 @@ body {
     left: 0;
     opacity: 0.7;
     z-index: 1;
-    display: none ;
+    display: none;
 
 }
 
 .popup {
     color: black;
-    background-color: bisque;
+    background-image: linear-gradient(rgb(165, 166, 252), rgb(2, 2, 87));
     z-index: 2;
     position: absolute;
     border-radius: 10px;
     left: 30%;
+    right: 30%;
     padding: 15px;
     top: 20%;
     display: none;
 }
 
-button {
-    border-radius: 8px;
+.popup input{
+    background: transparent;
+    border: none;
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: solid 2px;
+    font-size: 20px;
 }
 
-.popup button {
+.popup textarea {
+    background: transparent;
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-size: 20px;
+}
 
+.popup input::placeholder, textarea::placeholder{
+    color: black;
+    opacity: 0.8;
+}
+
+.popup input:focus, textarea:focus{
+    outline: none;
+}
+
+button {
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    border: none;
     margin-top: 10px;
+    background-color: #fd6569;
+}
+
+.add {
+    border-radius: 100%;
+    padding: 15px 25px 15px 25px;
+    font-size: 42px;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
 }

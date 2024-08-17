@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <h1>NOTIFYING</h1>
+        </nav>
+    </header>
+
     <main>
-        <button onclick="add()">ADD</button>
+
+        <div class="container">
+            <div class="rant-container">
+                <h2>Title</h2>
+                <h5>Sub</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet aut, iusto officia nesciunt atqueaspernatur iste explicabo officiis dolore libero perspiciatis similique. Perspiciatis inventore aliquam ad quisquam in magnam libero.</p>
+                <button onclick="del(event)"> DELETE</button>
+            </div>
+            
+        </div>
+
+        <button class="add">+</button>
+
         <div class="overlay"></div>
         <div class="popup">
-            <p></p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione!
-            br
-            <button onclick="cancel()">cancel</button>
+           <h2>RANT</h2>
+           <input type="text" placeholder="Rant Topic" id="topic">
+           <input type="text" placeholder="Rant Subject" id="subject">
+           <textarea placeholder="Rant Here..." id="here"></textarea>
+           <button id="save-rant">Save Rant</button>
+            <button id="cancel">cancel</button>
         </div>
 
     </main>
