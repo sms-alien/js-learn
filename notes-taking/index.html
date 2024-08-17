@@ -10,20 +10,15 @@
 
 <body>
     <main>
-        <header>
-            <h1>NOTES</h1>
-        </header>
-        <div class="note" id="notes">
-            <div class="inputs">
-                <input type="text" id="rant" placeholder="Rant here(you have nobody 🫵 lol)">
-                <button id="newtask" onclick="ntask()">ADD</button>
-            </div>
-            <ul id="rants">
-
-            </ul>
+        <button onclick="add()">ADD</button>
+        <div class="overlay"></div>
+        <div class="popup">
+            <p></p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ratione!
+            <button onclick="cancel()">cancel</button>
         </div>
+
     </main>
-    <script src="index.js"></script>
 </body>
 
 </html>
