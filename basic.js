@@ -40,7 +40,7 @@ var b=5;
 add()
 
 //exercise 2
-var factor="johnny"
+var factor="Error 404 not found"
 var fplayer="Dhoni"
 var fmovie="Bridge to terrabithiya"
 
@@ -119,7 +119,7 @@ if(score<=50)
 }
 else if(score>50 && score<=70)
 {
-    console.log('good job nigger')
+    console.log('good job')
 }
 else if (score>70)
 {

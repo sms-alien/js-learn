@@ -4,7 +4,7 @@ para.textContent = "hi"
 
 
 function change() {
-    var content = ['Honey ahh', 'Oh daddy', 'kotta kalaki', 'pombala poriki', 'waatha therika viduro', 'Baby, Bye Bye Bye...', 'hello mother fucker', 'goto basement kiddo', 'nigga whatcha doing here']
+    var content = ['Hii', 'Random string', 'shuffle', 'here we go', 'num', 'Baby, Bye Bye Bye...', 'learn & grow', 'got to go', 'nahi']
     var random = Math.floor(Math.random() * content.length)
     title.textContent = content[random]
 }
@@ -15,7 +15,7 @@ function add() {
 
     var total = num1 + num2;
 
-    result.textContent = "The total is: " + total + "honey its right right uwu..";
+    result.textContent = "The total is: " + total +" "+ "is this right?";
 }
 
 var sco = 10
@@ -25,7 +25,7 @@ function match() {
     var ans = document.getElementById("guess").value
     if (no == ans) {
         output.textContent = "you're right"
-        alert("you won nigga...")
+        alert("you got it...")
     }
     else {
         sco = sco - 1
@@ -41,13 +41,20 @@ function task() {
 
 function words() {
     var par = document.createElement('h1')
-    par.textContent = "F*CK"
+    par.textContent = "IDK"
     var contain = document.getElementById("container")
     contain.append(par)
 }
-function color() {
-    nigga.style.backgroundColor = 'yellow'
-}
+
+giga.addEventListener('click',() => {
+    if(giga.style.backgroundColor = 'white'){
+        giga.style.backgroundColor = 'black'
+        giga.style.color='white'
+    } else {
+        giga.style.backgroundColor = 'white'
+        giga.style.color='black'
+    }
+});
 
 /* var above=document.getElementById('above')
 var one=document.getElementById('one').value
@@ -247,3 +254,5 @@ function HandleForeach(value) {
         document.getElementById('pp').appendChild(tr); // Append the row to the table
     });
 }
+
+
