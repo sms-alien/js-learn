@@ -15,7 +15,7 @@ function add() {
 
     var total = num1 + num2;
 
-    result.textContent = "The total is: " + total +" "+ "is this right?";
+    result.textContent = "The total is: " + total + " " + "is this right?";
 }
 
 var sco = 10
@@ -46,13 +46,13 @@ function words() {
     contain.append(par)
 }
 
-giga.addEventListener('click',() => {
-    if(giga.style.backgroundColor = 'white'){
+giga.addEventListener('click', () => {
+    if (giga.style.backgroundColor = 'white') {
         giga.style.backgroundColor = 'black'
-        giga.style.color='white'
+        giga.style.color = 'white'
     } else {
         giga.style.backgroundColor = 'white'
-        giga.style.color='black'
+        giga.style.color = 'black'
     }
 });
 
@@ -206,14 +206,14 @@ function handleform() {
     var coursevalue = inputcourse.value;
     var maleValue = malegender.value;
     var femaleValue = femalegender.value;
-    var genderValue=null;
+    var genderValue = null;
     var emailvalue = inputemail.value;
 
     if (malegender.checked) {
-        genderValue='male'
+        genderValue = 'male'
     }
-    else{
-        genderValue='female'
+    else {
+        genderValue = 'female'
     }
     content.push({
         name: namevalue,
@@ -254,5 +254,31 @@ function HandleForeach(value) {
         document.getElementById('pp').appendChild(tr); // Append the row to the table
     });
 }
+
+let myButton = document.querySelector("#change");
+let myHeading = document.querySelector("h6");
+
+function setUserName() {
+    const myName = prompt("Please enter your name.");
+    if (!myName) {
+      setUserName();
+    } else {
+      localStorage.setItem("name", myName);
+      myHeading.textContent = `UserName, ${myName}`;
+    }
+  }
+  
+
+if (!localStorage.getItem("name")) {
+    setUserName();
+} else {
+    const storedName = localStorage.getItem("name");
+    myHeading.textContent = `UserName, ${storedName}`;
+}
+
+myButton.onclick = () => {
+    setUserName();
+};
+
 
 
